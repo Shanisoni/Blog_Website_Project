@@ -1,0 +1,442 @@
+/* * {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(238, 236, 236);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    max-width: 100vw;
+    max-height: 100vh;
+    background-color: rgb(226, 226, 226);
+}
+
+.header_container {
+    margin-bottom: 2.8rem;
+}
+
+.header_title {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.header_desc {
+    max-width: 568px;
+    color: rgb(118, 121, 124);
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 800;
+}
+
+.main_container {
+    margin: 20px;
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media (min-width: 935px) {
+    .main_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1318px) {
+    .main_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1870px) {
+    .main_container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.card_container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(228, 220, 220);
+    border-radius: 8px;
+}
+
+.card_image_container {
+    position: relative;
+    overflow: hidden;
+    height: 14rem;
+}
+
+@media (max-width: 768px) {
+    .card_image_container {
+        height: 16rem;
+    }
+}
+
+.card_image {
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.card_title_container {
+    display: flex;
+    flex-direction: column;
+    padding: 2.2rem;
+}
+
+.card_container:hover .card_image {
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+
+.card_title {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-bottom: 0.3rem;
+    color: black;
+}
+
+.card_title_anchor:hover .card_title {
+    color: rgb(6, 32, 179);
+}
+
+.card_description {
+    color: rgb(63, 61, 61);
+    font-size: 1rem;
+}
+
+.card_footer_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 1.5rem;
+}
+
+.author_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author_avtar_container {
+    height: 2.5rem;
+    width: 2.5rem;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: rgb(173, 160, 160);
+}
+
+.author_info_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.author_name {
+    color: blue;
+}
+
+.author_detail {
+    color: rgb(77, 77, 82);
+}
+
+.card_tag_container {
+    height: 35px;
+    font-size: 0.89rem;
+    border: px solid rgb(3, 2, 2);
+    line-height: 1.3rem;
+    padding: 0.4rem 0.5rem;
+    background-color: rgb(231, 231, 221);
+    color: rgb(2, 177, 177);
+}
+
+.card_tag_container a {
+    color: rgb(0, 0, 0);
+}
+
+.header_title {
+    font-family: Georgia, serif;
+} */
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    max-width: 100vw;
+    max-height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.header_container{
+    margin-bottom: 2.8rem;
+}
+
+.header_title{
+    margin-bottom: 2rem ;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.header_desc{
+    color: black;
+    max-width: 568px;
+    color: rgb(118, 121, 124);
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 800;
+}
+.main_container{
+    margin: 20px;
+    display: grid;
+    gap: 4rem;
+    /* grid-template-columns: repeat(4 , 1fr); */
+    grid-template-columns: repeat(auto-fit , minmax(350px , 400px));
+    justify-content: center;
+
+    /* Only this line can be ussed instead of media query all three code this is the line grid-template-columns: repeat(auto-fit , minmax(350px , 400px));
+    in this line  with the help of minmax we give the range of pixels to be adjusted  */
+    
+}
+
+/* @media (min-width:935px){
+    .main_container{
+    grid-template-columns : repeat(2 , 1fr);
+    }
+}
+
+@media (min-width:1318px){
+    .main_container{
+    grid-template-columns : repeat(3 , 1fr);
+    }
+}
+
+@media (min-width:1870px){
+    .main_container{
+    grid-template-columns : repeat(4 , 1fr);
+    }
+} */
+
+.card_container{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(228, 220, 220) ;
+    border-radius: 8px;
+    
+}
+
+
+.card_image_container{
+    position: relative;
+    overflow: hidden;
+    height: 14rem;
+}
+
+@media (main-width:768px){
+    .card_image_container{
+   height: 16rem;
+    }
+}
+
+
+.card_image{
+    object-fit: cover ;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.card_title_container{
+    display: flex;
+    flex-direction: column;
+    padding: 2.2rem ;
+    
+}
+
+.card_container:hover .card_image{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+    padding: 1.5rem;
+    
+}
+.card_title{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-bottom: 0.3rem;
+    color: black;
+}
+
+
+
+
+
+
+.card_title_anchor:hover .card_title{
+    color: rgb(6, 32, 179);
+
+}
+
+.card_description{
+    color: rgb(63, 61, 61);
+    font-size: 1rem;
+
+}
+.card_footer_container{
+    display:flex ;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 1.5rem;
+}
+
+.author_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.author_avtar_container{
+    height:2.5rem ;
+    width: 2.5rem;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color:rgb(173, 160, 160) ;
+    
+}
+
+.author_info_container{
+    display: flex;
+    flex-direction: column;
+    
+  
+}
+
+.author_name{
+      color: blue;
+
+}
+
+.author_detail{
+    
+    color: rgb(77, 77, 82);
+}
+
+.card_tag_container{
+    
+    margin-bottom: 8px;
+    margin-right: 8px; 
+    /* /* height: 35px; */
+    
+    font-size:0.89rem ;
+    border: 1px solid rgb(83, 81, 81);
+    line-height:1.3rem ;
+    padding: 0.4rem 0.5rem;
+    background-color: rgb(231, 231, 221);
+    color: rgb(2, 177, 177);
+
+}
+
+.card_tag_container a{
+    
+    color: rgb(0, 0, 0);
+}
+
+.header_title{
+    font-family: Georgia, serif;
+    
+} 
+
+
+
+/* .navContainer{
+    width: 100vw ;
+    background-color: rgb(128, 141, 9);
+    background-color: #3246b3;
+    background-image: linear-gradient(43deg, #3a4dbd 0%, #c21eb7 46%, #cf9023 100%);
+    
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.container{
+    height: 100vh ;
+    width: 100vw ; 
+    overflow-x : none ;
+
+} */
+
+
+/* #navList{
+    width:100%;
+    padding:15px ;
+    font-size: 2.3rem;
+    list-style:none ;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+    margin-left: 15px;
+    align-items: center;
+
+}
+
+
+#navLogo{
+    font-size: 2.3rem;
+    color:aliceblue
+
+}
+
+#navitems{
+   
+    display: flex;
+    gap:20px ;
+
+}
+
+nav{
+    width: 100% ;
+    overflow-x: none ;
+} */
