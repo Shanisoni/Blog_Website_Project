@@ -175,7 +175,184 @@ a {
 
 .header_title {
     font-family: Georgia, serif;
+
 } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .container{
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
+    animation: gradient 100s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+
+
+
+body{
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+} */
+
+.checkbox-wrapper-16 .checkbox-tile:hover {
+    border-color: #2260ff;
+  }
+  .checkbox-wrapper-16 .checkbox-tile:hover:before {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 *{
@@ -186,7 +363,7 @@ a {
 body{
     height: 100%;
     width: 100%;
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(255, 255, 255);
 }
 
 a{
@@ -198,7 +375,7 @@ a{
     padding: 2rem 1rem;
     max-width: 100vw;
     max-height: 100vh;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(223, 215, 215);
 }
 
 .header_container{
@@ -228,6 +405,10 @@ a{
     /* grid-template-columns: repeat(4 , 1fr); */
     grid-template-columns: repeat(auto-fit , minmax(350px , 400px));
     justify-content: center;
+    background-color: rgb(140, 235, 235);
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    border-radius: 1rem;
 
     /* Only this line can be ussed instead of media query all three code this is the line grid-template-columns: repeat(auto-fit , minmax(350px , 400px));
     in this line  with the help of minmax we give the range of pixels to be adjusted  */
@@ -252,12 +433,96 @@ a{
     }
 } */
 
+.header_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px rgb(24, 15, 15);
+    padding: 3rem;
+    border-radius: 2.1rem;
+    font-size: 1.2rem;
+    background-image: linear-gradient(to right, #abbaab 0%, #ffffff  51%, #abbaab  100%);
+    transition: 0.5s;
+    box-shadow: 0 0 20px #eee;
+    /* max-width: 50%; */
+}
+         
+
+
+  .header_container:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #ca1a1a;
+    text-decoration: none;
+   
+  }
+ 
+
+  .header_title{
+    font-size: 2.8rem;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   border: solid 3px  #abbaab;
+   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+   padding: 4rem;
+   border-radius: 2rem;
+  }
+  .header_title{
+    /* font-size: 2rem; */
+    background: -webkit-linear-gradient(#06ee7a, #070105);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card_container:hover {
+    border-color: #086e72;
+  }
+  .card_container:hover:before {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  .card_image_container{
+    border: 4px solid rgb(238, 233, 233) ;
+    border-color: #e2e2dd;
+  }
+
+  .card_footer_container{
+    border: 4px solid rgb(187, 197, 50) ;
+    background-color: #d8e61a;
+    height: 4rem;
+    width: 25rem;
+    
+  }
+
+
+
+
+
+
+
+
+
 .card_container{
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    border: 1px solid rgb(228, 220, 220) ;
+    border: 4px solid rgb(238, 233, 233) ;
     border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    background-color: rgb(255, 255, 255);
+    /* padding: 0.8rem; */
     
 }
 
@@ -323,6 +588,7 @@ a{
     justify-content: space-between;
     align-items: flex-end;
     padding: 0 1.5rem;
+    ;
 }
 
 .author_container{
@@ -387,6 +653,72 @@ a{
 
 
 
+  /* Create the animation... */
+  @keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  /* ...and then apply it: */
+  .header_title{
+    animation: slide-in 1000ms;
+  }
+
+ 
+
+  @keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  /* ...and then apply it: */
+  .header_desc{
+    animation: slide-in 1500ms;
+  }
+
+  .header_title {
+    font-family: Arial;
+    font-size: 50px;
+    animation: fadeIn 5s;
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+ 
+
+  .card_title  {
+    /* font-family: Arial;
+    font-size: 50px; */
+    animation: fadeIn 2s;
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+
+
+  
+
+  .card_description{
+    /* font-family: Arial;
+    font-size: 50px; */
+    animation: fadeIn 2s;
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 /* .navContainer{
     width: 100vw ;
     background-color: rgb(128, 141, 9);
