@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
       // Listen for the image error event
       image.addEventListener("error", function() {
         // In case of an error, you can handle it here (e.g., display an error message)
-        console.error("Image failed to load.");
+        console.error("Image loading failed.");
       });
     });
   });
